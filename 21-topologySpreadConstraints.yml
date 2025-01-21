@@ -19,3 +19,8 @@ spec:
           image: nginx:1.17
           ports:
             - containerPort: 80
+      topologySpreadConstraints:
+        - nodeTaintsPolicy: Ignore
+          maxSkew: 1
+          topologyKey: eks.amazonaws.com/capacityType
+          whenUnsatisfiable: ScheduleAnyway
