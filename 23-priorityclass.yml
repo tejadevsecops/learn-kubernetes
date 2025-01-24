@@ -46,7 +46,7 @@ spec:
             - containerPort: 80
           resources:
             requests:
-              cpu: 500m
+              cpu: 20m
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -71,4 +71,4 @@ spec:
             - containerPort: 80
           resources:
             requests:
-              cpu: 500m
+              cpu: 20m
