@@ -97,7 +97,7 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: catalogue-schema
+  name: catalogue-schemaa
 spec:
   template:
     spec:
@@ -114,6 +114,7 @@ spec:
             - name: SCHEMA_FILE
               value: db/master-data.js
       restartPolicy: Never
+
 ---
 apiVersion: apps/v1
 kind: Deployment
