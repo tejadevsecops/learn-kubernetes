@@ -97,7 +97,7 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: catalogue-schemaa
+  name: catalogue-schema
 spec:
   template:
     spec:
