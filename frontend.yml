@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 021891599381.dkr.ecr.us-east-1.amazonaws.com/frontend-test:latest
+          image: public.ecr.aws/w8x4g9h7/roboshop-v3/frontend
           ports:
             - containerPort: 80
           env:
